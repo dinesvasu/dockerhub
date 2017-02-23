@@ -20,7 +20,7 @@ RUN mkdir -p /opt/tomcat \
 COPY tomcat-users.xml /opt/tomcat/conf/ 
 COPY test.war /opt/tomcat/webapps/
 #Expose tomcat
-EXPOSE 8080
+EXPOSE 80
 ENV JAVA_opts -server -XX:+DisableExplicitGC -XX:+UseConcMarkSweepGC \
 	-Xms1G -Xmx2G -XX:PermSize=1G -XX:MaxPermsize=2G
 	
